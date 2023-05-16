@@ -1,12 +1,14 @@
-function threeSum(arr, target) {
-// write your code here
-	for(let i=0; i<arr.length; i++){
+function number(num){
+    let add = "";
+        while(num > 0){
+            
+            let str = num%2;
+            add += str.toString();
 
-		let ans = arr["target"].toString(2);
-		return ans;
-	}
-	
-  
-}
+            num =Math.floor(num/2);
+        }
+        return add
+    
+    }
 
 module.exports = threeSum;
