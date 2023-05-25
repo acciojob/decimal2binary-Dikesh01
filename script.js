@@ -3,11 +3,12 @@ function number(num){
         while(num > 0){
             
             let str = num%2;
-            add += str.toString();
+            add = str.toString() + add;
 
             num =Math.floor(num/2);
+          
         }
-        return add
+        return add;
     
     }
 
